@@ -1,0 +1,142 @@
+body{
+  background-color: #b80014;
+  font-family: Bitter !important;
+}
+
+.Select:scope{
+  border-color: #b80014 !important;
+}
+
+.Select-value{
+  color: #b80014 !important;
+  background-color: rgba(184, 0, 21, 0.15) !important;
+  font-size: 14px !important;
+}
+
+h2{
+  color: black;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+}
+
+nav{
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  height: 50px;
+  background-color: white;
+  width: 100%;
+  border-bottom: solid black 1px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  color: #b80014;
+  font-size: 30px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+#logo{
+  height: 75px;
+  position: absolute;
+  right: 10px;
+  top: -13px;
+}
+
+#nav_logo{
+  height: 50px;
+  width: 100px;
+  margin: 0;
+  left: 0;
+}
+
+@media (max-width: 550px) {
+  #grid_container{
+  position: absolute;
+  top: 50px;
+  width: 98%;
+  margin: 1%;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-areas:  "a a a a"
+                        "d d x x"
+                        "c c c c"
+                        "c c c c"
+                        "e e e e"
+                        "e e e e"
+                        "f f f f"
+                        "f f f f"
+                        "g g g g"
+                        "g g g g";
+  grid-template-columns: 24.2% 24.2% 24.2% 24.2%;
+  grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
+  grid-gap: 1% 1%;
+}
+}
+@media (min-width: 551px) {
+  #grid_container{
+  position: absolute;
+  top: 50px;
+  width: 98%;
+  margin: 1%;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-areas:  "a c c c"
+                        "d c c c"
+                        "e e y y"
+                        "e e y y"
+                        "f f g g"
+                        "f f g g";
+  grid-template-columns: 24.2% 24.2% 24.2% 24.2%;
+  grid-template-rows: 200px 200px 200px 200px 200px 200px;
+  grid-gap: 1% 1%;
+}
+}
+
+#filter_section{
+  grid-area: a;
+}
+
+#fellows_stats{
+  grid-area: c;
+}
+
+#fellows_total{
+  grid-area: d;
+}
+
+#fellows_region{
+  grid-area: e;
+}
+
+#bar_math{
+  grid-area: f;
+}
+
+#bar_social{
+  grid-area: g;
+}
+
+.pane{
+  padding: 5px;
+  background-color: white;
+  border-color: grey;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 0px;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.total_pane_value{
+    color: black;
+  font-size: 8em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.total_pane_name{
+  color: black;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center;
+}
