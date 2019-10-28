@@ -11,3 +11,4 @@ Link to the webpage: weuder.pythonanywhere.com/dash
 ### How do I get set up? ###
 Plotly
 Dash
+Pandas
